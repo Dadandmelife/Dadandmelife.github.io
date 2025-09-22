@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>سایت من</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>گالری کارهای من</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-  <!-- نوار بالا -->
-  <header>
-    <div class="logo">MySite</div>
-    <nav>
-      <a href="#">خانه</a>
-      <a href="#">فیلم‌ها</a>
-      <a href="#">نقاشی‌ها</a>
-      <a href="#">تماس</a>
-    </nav>
+  <header class="container site-header">
+    <div>
+      <div class="title">گالری کارهای من</div>
+      <div class="bio">اینجا آثار خلاقانه‌ی من را می‌بینید.</div>
+    </div>
   </header>
 
-  <!-- بخش اصلی (Hero) -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>خلاق و زیبا</h1>
-      <p>اینجا می‌توانید کارهای من را ببینید</p>
-      <a href="#" class="btn">بیشتر ببینید</a>
+  <main class="container">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">همه</button>
+      <button class="filter-btn" data-filter="video">ویدیو</button>
+      <button class="filter-btn" data-filter="drawing">نقاشی</button>
+      <button class="filter-btn" data-filter="craft">دست‌سازه</button>
     </div>
-    <div class="hero-image">
-      <img src="images/stones.jpg" alt="stones">
-    </div>
-  </section>
 
+    <div class="grid"></div>
+  </main>
+
+  <div class="modal" onclick="if(event.target===this) closeModal()">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title"></div>
+        <button class="close-btn" onclick="closeModal()">بستن</button>
+      </div>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © <span id="year"></span>  – همه‌ی حقوق محفوظ است.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
