@@ -1,0 +1,22 @@
+{
+  "siteTitle": "گالری کارهای من",
+  "bio": "اینجا فیلم‌ها، نقاشی‌ها و دست‌سازه‌های من را می‌بینید.",
+  "items": [
+    {
+      "media": "image",
+      "category": "drawing",
+      "title": "نقاشی خورشید",
+      "src": "assets/images/my-drawing.jpg",
+      "description": "نقاشی با آبرنگ."
+    },
+    {
+      "media": "video",
+      "category": "video",
+      "title": "فیلم کوتاه",
+      "src": "assets/videos/my-video.mp4",
+      "thumb": "assets/thumbs/my-video-thumb.jpg",
+      "description": "یک ویدیوی کوتاه."
+    }
+  ]
+}
+

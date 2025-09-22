@@ -1,0 +1,23 @@
+body { font-family: sans-serif; background: #fafafa; margin: 0; padding: 0; }
+.container { max-width: 1000px; margin: auto; padding: 20px; }
+.site-header { margin-bottom: 20px; }
+.title { font-size: 1.5rem; font-weight: bold; }
+.bio { opacity: 0.7; margin-top: 5px; }
+
+.filters { margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 12px; border: 1px solid #ccc; border-radius: 20px; cursor: pointer; }
+.filter-btn.active { background: #333; color: #fff; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; }
+.card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; }
+.card img { width: 100%; border-radius: 10px 10px 0 0; }
+.card-body { padding: 10px; }
+.card-title { font-weight: bold; margin-top: 5px; }
+
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; }
+.modal.open { display: flex; }
+.modal-box { background: #000; max-width: 900px; width: 100%; border-radius: 10px; overflow: hidden; }
+.modal-header { color: #fff; display: flex; justify-content: space-between; padding: 10px; }
+.modal-content img, .modal-content video { max-width: 100%; height: auto; }
+.close-btn { background: #fff; border: none; padding: 6px 12px; cursor: pointer; border-radius: 6px; }
+
