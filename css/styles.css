@@ -1,78 +1,22 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #fafafa;
-  color: #333;
-}
+body { font-family: sans-serif; background: #fafafa; margin: 0; padding: 0; }
+.container { max-width: 1000px; margin: auto; padding: 20px; }
+.site-header { margin-bottom: 20px; }
+.title { font-size: 1.5rem; font-weight: bold; }
+.bio { opacity: 0.7; margin-top: 5px; }
 
-/* سربرگ */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-}
+.filters { margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 12px; border: 1px solid #ccc; border-radius: 20px; cursor: pointer; }
+.filter-btn.active { background: #333; color: #fff; }
 
-header .logo {
-  font-weight: bold;
-  font-size: 20px;
-}
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; }
+.card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; }
+.card img { width: 100%; border-radius: 10px 10px 0 0; }
+.card-body { padding: 10px; }
+.card-title { font-weight: bold; margin-top: 5px; }
 
-header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
-
-header nav a:hover {
-  color: #ff6600;
-}
-
-/* بخش Hero */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 100px;
-  min-height: 90vh;
-  background: #fff;
-}
-
-.hero-text {
-  max-width: 500px;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #ff6600;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.btn:hover {
-  background: #e65c00;
-}
-
-/* عکس سمت راست */
-.hero-image img {
-  max-width: 500px;
-  height: auto;
-}
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; }
+.modal.open { display: flex; }
+.modal-box { background: #000; max-width: 900px; width: 100%; border-radius: 10px; overflow: hidden; }
+.modal-header { color: #fff; display: flex; justify-content: space-between; padding: 10px; }
+.modal-content img, .modal-content video { max-width: 100%; height: auto; }
+.close-btn { background: #fff; border: none; padding: 6px 12px; cursor: pointer; border-radius: 6px; }
